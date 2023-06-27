@@ -46,6 +46,6 @@ class trendingVideos:
             self.chartedVideos.append(video_by_chart.items[0])
         return video_by_chart.items
     
-test = trendingVideos('AIzaSyBYoF9cK-a35nyziWfaxA8a3VZVXIG1ib4')
+test = trendingVideos('')
 test.get_most_popular()
 test.dispalyChart()
