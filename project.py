@@ -59,9 +59,9 @@ class trendingVideos:
             video_by_chart = self.api.get_videos_by_chart(chart="mostPopular", region_code = region, count=1)
             self.chartedVideos.append(video_by_chart.items[0])
         return video_by_chart.items
- 
- 
-test = trendingVideos('AIzaSyBYoF9cK-a35nyziWfaxA8a3VZVXIG1ib4')
+
+    
+test = trendingVideos('')
 test.get_most_popular()
 test.store_video_information()
 test.dispalyChart()
